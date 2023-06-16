@@ -1,0 +1,139 @@
+.home-section{
+    padding: 2rem;
+}
+.inner-section{
+    width: 70%;
+    margin: auto;
+}
+.top-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+   
+}
+
+ select {
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+    outline:0;
+    box-shadow:none;
+    border:0!important;
+    background: #5c6664;
+    background-image: none;
+    flex: 1;
+    padding: 0 .5em;
+    color:#fff;
+    cursor:pointer;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+ }
+ select::-ms-expand {
+    display: none;
+ }
+ .select {
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #5c6664;
+    overflow: hidden;
+    border-radius: .25em;
+ }
+ .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #2b2e2e;
+    cursor:pointer;
+    pointer-events:none;
+    transition:.25s all ease;
+ }
+ .select:hover::after {
+    color: #23b499;
+ }
+
+
+ .card-main{
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.card{
+    width: 28%;
+    margin: 15px;
+  border-radius: 10px;
+   padding: 5px;
+  transition: all ease 0.6s;
+   
+}
+.card img{
+    height: 250px;
+width: 100%;
+}
+
+.price{
+    background-color: #184081;
+    padding: 8px;
+    color: white;
+    margin-top: -10px;
+}
+
+
+@media (min-width:280px) and (max-width:540px){
+    .card-main{
+        width: 100%;
+        margin: auto;
+        padding: 0.2rem;
+        
+    
+    }
+    .card{
+        width: 100%;
+        margin: 15px;
+    }
+    .home-section{
+        padding: 0.5rem;
+    }
+    .inner-section{
+        width: 100%;
+        margin: auto;
+    }
+    .top-section{
+        display: flex;
+     flex-direction: column;
+       
+    }
+} 
+
+
+@media (min-width:767px) and (max-width:1024px){
+    .home-section{
+        padding: 0.5rem;
+    }
+    .inner-section{
+        width: 90%;
+        margin: auto;
+    }
+  
+    .card-main{
+        width: 100%;
+        margin: auto;
+        padding: 0.2rem;
+        
+    
+    }
+    .card{
+        width: 43%;
+        margin: 15px;
+    }
+}
